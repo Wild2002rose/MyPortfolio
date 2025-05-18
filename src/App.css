@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+html, body {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  height: 580px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.about{
+  height: 650px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .me{
+  height: 750px;
+} */
+
+/* .projects{
+  height: 1500px;
+} */
+
+.project{
+  height: 450px;
 }
 
-.App-link {
-  color: #61dafb;
+/* .skills{
+  height: 800px;
+} */
+
+.skill{
+  height: 90px;
+  margin-left: 130px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.skills1{
+  height: 160px;
+  width: 350px;
+}
+.head{
+  /* margin-left: 150px; */
+}
+
+.net{
+  margin-left: 100px;
+}
+
+.form{
+  width: 600px;
 }
