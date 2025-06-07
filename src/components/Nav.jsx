@@ -19,7 +19,8 @@ function Nav() {
   }, [darkMode]);
 
   return (
-    <div className="fixed z-50 bg-brand-light dark:bg-brand-dark w-full px-5 md:px-20 shadow-lg text-brand-dark dark:text-brand-light">
+    <div className="fixed z-50 bg-brand-light dark:bg-brand-dark w-full px-5 
+    md:px-20 shadow-lg text-brand-dark dark:text-brand-light">
       
       <div className="h-20 flex items-center justify-between">
         
