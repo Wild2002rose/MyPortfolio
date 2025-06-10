@@ -10,7 +10,7 @@ function Projects() {
         {
             id: 1,
             src: sparsha,
-            demo: "https://sparsha-kappa.vercel.app/",
+            demo: "https://sparsha-kohm.vercel.app/",
             code: "https://github.com/Wild2002rose/Sparsha"
         },
         {
