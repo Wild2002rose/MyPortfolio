@@ -51,7 +51,7 @@ function Home() {
                             </p>
         
                             <div className="flex gap-14 mt-14">
-                                <a  href="/Resume.pdf" target = "_blank" rel="noopener noreferrer" >
+                                <a  href="/UpdatedResume.pdf" target = "_blank" rel="noopener noreferrer" >
                                 <button className="dark:text-brand-white border dark:border-brand-c1 h-14 w-40 rounded-lg dark:bg-gradient-to-r dark:from-brand-c1 dark:to-brand-c2 
                                 bg-gradient-to-l from-[#DEF2F1] to-[#89C9B8] border-[#89C9B8] text-brand-primary">Resume</button>
                                 </a>
