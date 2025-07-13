@@ -16,8 +16,22 @@ module.exports = {
       },
       fontFamily: {
         alex: ['"Alex Brush"', 'cursive'],
-      }
+      },
+      animation: {
+        'text-glow': 'glow 3s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        glow: {
+          '0%': {
+            textShadow: '0 0 5px #A305A6, 0 0 10px #A305A6, 0 0 15px #660273',
+          },
+          '100%': {
+            textShadow: '0 0 10px #FEFFFF, 0 0 20px #2D0140, 0 0 30px #A305A6',
+          },
+        },
+      },
+      
     }
-  },
+      },
   plugins: [],
 }

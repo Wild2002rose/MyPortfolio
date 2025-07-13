@@ -1,6 +1,7 @@
 import { FaMoon, FaBars, FaTimes,FaSun } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 import {Link} from 'react-scroll';
+import {motion} from "framer-motion";
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,10 +24,24 @@ function Nav() {
     md:px-20 shadow-lg text-brand-dark dark:text-brand-light">
       
       <div className="h-20 flex items-center justify-between">
-        
-        <div className=" font-bold text-3xl font-alex ml-4 cursor-pointer">
+        <motion.div 
+          animate={{
+            y:[0,-4,0],
+            scale: [1.2, 1.8, 1.2]
+          }}
+          transition ={{
+            duration:5,
+            ease:"easeInOut",
+            repeat: Infinity,
+          }}
+          className="text-4xl ml-4 cursor-pointer font-alex font-bold 
+          bg-gradient-to-r from-teal-800 via-teal-600 to-teal-400 
+          text-transparent bg-clip-text 
+          drop-shadow-md dark:from-brand-light dark:to-brand-c2
+          hover:rotate-1 hover:scale-105 transform-gpu transition-all duration-500">
           Nasrin
-        </div>
+        </motion.div>
+
 
         
         <div className="hidden md:flex gap-10 font-semibold text-md">

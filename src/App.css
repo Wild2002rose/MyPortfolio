@@ -11,21 +11,9 @@ html, body {
   height: 650px;
 }
 
-/* .me{
-  height: 750px;
-} */
-
-/* .projects{
-  height: 1500px;
-} */
-
 .project{
   height: 450px;
 }
-
-/* .skills{
-  height: 800px;
-} */
 
 .skill{
   height: 90px;
@@ -36,10 +24,6 @@ html, body {
   height: 160px;
   width: 350px;
 }
-.head{
-  /* margin-left: 150px; */
-}
-
 .net{
   margin-left: 100px;
 }
@@ -47,3 +31,4 @@ html, body {
 .form{
   width: 600px;
 }
+

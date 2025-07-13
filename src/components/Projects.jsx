@@ -6,11 +6,23 @@ import wfs from "../assets/wfs.jpg";
 import sparsha from "../assets/sparsha.jpg";
 
 function Projects() {
+const cardVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: (i) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.2,
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  }),
+};
     const works = [
         {
             id: 1,
             src: sparsha,
-            demo: "https://sparsha-kohm.vercel.app/",
+            demo: "https://sparsha-2025.vercel.app/",
             code: "https://github.com/Wild2002rose/Sparsha"
         },
         {
@@ -40,36 +52,57 @@ function Projects() {
 
     ]
     return(
-        <div className="md:h-[1300px] h-[2450px] dark:bg-gradient-to-t dark:from-brand-primary dark:to-brand-dark bg-gradient-to-b from-brand-light to-brand-white projects md:px-40 md:py-20 px-4">
+        <div className="md:h-[1300px] h-[2450px] dark:bg-gradient-to-t dark:from-brand-primary 
+        dark:to-brand-dark bg-gradient-to-b from-brand-light to-brand-white projects md:px-40 md:py-20 px-4">
             <div className="w-80 py-10 h-20">
-                <h1 className="text-4xl font-alex dark:text-brand-light text-brand-dark  ml-6 px-2 inline border-b-4 dark:border-gray-400 border-gray-800">My Projects </h1>
+                <h1 className="text-4xl font-alex dark:text-brand-light text-brand-dark  
+                ml-6 px-2 inline border-b-4 dark:border-gray-400 border-gray-800">My Projects </h1>
             </div>
 
-            
-
             <div className="mt-20 md:grid md:grid-cols-3 md:gap-10 md:ml-10 px-6 grid gap-8">
-                {works.map(({id, src, demo, code}) => (
-                <div key={id} className="project dark:bg-brand-dark bg-brand-light dark:text-white rounded-lg dark:shadow-[0_0_12px_rgba(0,255,255,0.4)] shadow-[0_0_12px_rgba(46,139,87,0.5)]">
+                {works.map(({id, src, demo, code},i) => (
+                <motion.div key={id} custom={i} variants={cardVariants} initial="hidden" whileInView="visible"
+                viewport={{once:true}}
+                className="project dark:bg-brand-dark bg-brand-light dark:text-white 
+                rounded-lg dark:shadow-[0_0_12px_rgba(0,255,255,0.4)] shadow-[0_0_12px_rgba(46,139,87,0.5)]">
                      
                     <div className="">
-                        <img src={src} alt="" 
-                        className="rounded-md duration-200 md:hover:scale-105 brightness-90 md:hover:brightness-50"/>
+                        <motion.img src={src} alt="" whileHover={{ scale: 1.05, filter: "brightness(60%)" }}
+                        transition={{ duration: 0.4 }}
+                        className="rounded-md duration-200 w-full h-auto"/>
                     </div>
 
-                    <div className="mt-8 flex gap-40 ">
-                        <button className="h-10 w-1/2 rounded-lg  hover:scale-105 duration-400 ml-10">
-                        <a href={code} target="blank">Code</a>
-                        </button>
-                        <button className="h-10 w-1/2 rounded-lg  hover:scale-105 duration-400 mr-10">
-                        <a href={demo} target="blank">Demo</a>
-                        </button>
+                    <div className="mt-8 flex gap-20 justify-center pb-6">
+                        <motion.a
+                            href={code}
+                            target="blank"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            >
+                            <button className="h-10 px-6 rounded-lg border border-teal-600 text-teal-800 dark:text-white
+                             dark:border-brand-c2 hover:bg-teal-400 dark:hover:bg-brand-c2 transition duration-300 font-semibold">
+                                Code
+                            </button>
+                        </motion.a>
+                        <motion.a
+                            href={demo}
+                            target="blank"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            >
+                            <button className="h-10 px-6 rounded-lg border border-teal-600 text-teal-800 dark:text-white 
+                            dark:border-brand-c2 hover:bg-teal-400 dark:hover:bg-brand-c2 transition duration-300 font-semibold">
+                                Demo
+                            </button>
+                        </motion.a>
                     </div>
-                </div>))}
+                </motion.div>))}
 
                 
 
 
             </div>
+
         </div>
     )
 }
