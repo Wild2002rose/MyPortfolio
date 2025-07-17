@@ -73,7 +73,7 @@ function Skills() {
     ]
     return(
         <>
-        <div className="skills md:h-[800px] h-[950px] dark:bg-gradient-to-b dark:from-brand-primary dark:to-brand-dark projects bg-gradient-to-t from-brand-light to-brand-white md:px-40 md:py-20 px-10 py-40">
+        <div className="skills md:h-[800px] h-[1200px] dark:bg-gradient-to-b dark:from-brand-primary dark:to-brand-dark bg-gradient-to-t from-brand-light to-brand-white md:px-40 md:py-2 px-10 py-80">
             <h1 className="text-4xl font-alex dark:text-brand-light text-brand-dark md:ml-6 ml-0 md:px-2 px-0 inline border-b-4 dark:border-gray-400 border-gray-800 ">My Skills</h1>
             
 

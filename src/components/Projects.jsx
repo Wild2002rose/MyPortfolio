@@ -63,11 +63,12 @@ const cardVariants = {
                 {works.map(({id, src, demo, code},i) => (
                 <motion.div key={id} custom={i} variants={cardVariants} initial="hidden" whileInView="visible"
                 viewport={{once:true}}
-                className="project dark:bg-brand-dark bg-brand-light dark:text-white 
+                className="md:h-[450px] h-[480px] dark:bg-brand-dark bg-brand-light dark:text-white 
                 rounded-lg dark:shadow-[0_0_12px_rgba(0,255,255,0.4)] shadow-[0_0_12px_rgba(46,139,87,0.5)]">
                      
                     <div className="">
-                        <motion.img src={src} alt="" whileHover={{ scale: 1.05, filter: "brightness(60%)" }}
+                        <motion.img src={src} alt="" 
+                        whileHover={{ scale: 1.05, filter: "brightness(60%)" }}
                         transition={{ duration: 0.4 }}
                         className="rounded-md duration-200 w-full h-auto"/>
                     </div>

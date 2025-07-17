@@ -87,7 +87,7 @@ useEffect(() => {
       <div
         id="home"
         className="about dark:bg-gradient-to-t dark:from-brand-primary dark:to-brand-dark 
-        bg-gradient-to-t from-brand-white to-brand-light md:py-60 py-40"
+        bg-gradient-to-t from-brand-white to-brand-light md:py-60 py-40 md:h-[650px] h-[800px]"
       >
         <div className="h-[98%] md:w-[80%] md:ml-20 ml-10 md:flex grid">
           <div className="md:w-2/3 w-full md:ml-40 mt-4">
@@ -182,9 +182,9 @@ useEffect(() => {
 
       <div
         id="contact"
-        className="dark:bg-gradient-to-t dark:from-brand-primary dark:to-brand-dark bg-gradient-to-b from-brand-light to-brand-white"
+        className="dark:bg-gradient-to-t dark:from-brand-primary dark:to-brand-dark bg-gradient-to-b from-brand-light to-brand-white "
       >
-        <div className="md:grid md:grid-cols-3 bg-transparent md:px-40 md:py-10 px-10 py-8 grid gap-8">
+        <div className="md:grid md:grid-cols-3 bg-transparent md:px-40 md:py-2 px-10 py-0 grid gap-8">
           <div className="text-center md:ml-10">
             <h1 className="font-bold text-4xl dark:text-white text-brand-dark">
               Nasrin
@@ -233,7 +233,7 @@ useEffect(() => {
           </div>
         </div>
 
-        <div className="border-t dark:border-brand-light border-brand-dark md:ml-60 ml-40 md:mr-60 mr-40">
+        <div className="border-t dark:border-brand-light border-brand-dark md:ml-60 ml-40 md:mr-60 mr-40 ">
           <ul className="flex items-center justify-center space-x-5 py-12">
             {footerSocialLinks.map(({ id, src, href }) => (
               <motion.li
@@ -254,7 +254,9 @@ useEffect(() => {
             ))}
           </ul>
         </div>
+
       </div>
+      
     </div>
   );
 }
